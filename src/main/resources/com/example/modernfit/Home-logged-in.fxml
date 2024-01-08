@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #DC8C8C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.modernfit.HelloController">
+   <children>
+      <Button layoutX="534.0" layoutY="14.0" mnemonicParsing="false" text="Log out" />
+      <Text layoutX="210.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome John Smith 0123456789" textAlignment="CENTER" wrappingWidth="180.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="68.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="45.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todays Exercises">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ListView fx:id="myExercises" editable="true" layoutX="10.0" layoutY="40.0" prefHeight="151.0" prefWidth="180.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="373.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="55.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todays Meals">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ListView fx:id="myMeals" layoutX="7.0" layoutY="41.0" prefHeight="151.0" prefWidth="187.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="67.0" layoutY="360.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="71.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Week (x)">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ProgressBar layoutY="40.0" prefWidth="200.0" progress="0.0" />
+            <ProgressBar layoutY="66.0" prefWidth="200.0" progress="0.0" />
+            <ProgressBar layoutY="92.0" prefWidth="200.0" progress="0.0" />
+            <ProgressBar layoutY="118.0" prefWidth="200.0" progress="0.0" />
+            <ProgressBar layoutY="144.0" prefWidth="200.0" progress="0.0" />
+            <ProgressBar layoutY="169.0" prefWidth="200.0" progress="0.0" />
+            <ProgressBar layoutY="194.0" prefWidth="200.0" progress="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="373.0" layoutY="360.0" prefHeight="220.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="24.0" layoutY="186.0" mnemonicParsing="false" text="My Exercise plan and diet" />
+            <Text layoutX="31.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todays Calories Goal">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Arc fx:id="dailyCalories" fill="DODGERBLUE" layoutX="110.0" layoutY="110.0" length="270.0" radiusX="70.0" radiusY="69.0" startAngle="45.0" stroke="BLACK" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="2.0" type="ROUND" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
